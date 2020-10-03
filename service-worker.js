@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/precache-manifest.a71849a91c9637ed2e222398c14627f3.js"
+  "/precache-manifest.76ecb5598f9feee69eea5adb0475e1f6.js"
 );
 
 workbox.core.setCacheNameDetails({prefix: "pablomoreno"});
