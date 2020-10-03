@@ -5,9 +5,12 @@ module.exports = {
   },
   extends: ["plugin:vue/essential", "eslint:recommended", "@vue/prettier"],
   parserOptions: {
-    parser: "babel-eslint"
+    parser: "babel-eslint",
   },
   rules: {
+    "quotes": ["warn", "single"],
+    "semi": ["warn", "never"],
+    "comma-dangle": ["warn", "always"],
     "no-console": process.env.NODE_ENV === "production" ? "warn" : "off",
     "no-debugger": process.env.NODE_ENV === "production" ? "warn" : "off"
   },
