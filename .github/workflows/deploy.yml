@@ -17,7 +17,7 @@ jobs:
           node-version: 12.16.3
 
       - name: Install
-        run: npm run build
+        run: npm i
 
       - name: Build
         run: npm run build
