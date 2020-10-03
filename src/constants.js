@@ -48,6 +48,9 @@ export const JOBS = [
     description: '',
     url: 'https://www.wegow.com',
     logo: 'wegow.jpg',
+    start: new Date(2019, 8),
+    end: undefined,
+    current: false,
     technologies: [
       {
         id: 1,
@@ -92,6 +95,9 @@ export const JOBS = [
     description: '',
     url: 'https://thekeytalent.com',
     logo: 'tkt.png',
+    start: new Date(2019, 5),
+    end: new Date(2019, 7),
+    current: false,
     technologies: [
       {
         id: 1,
@@ -121,6 +127,9 @@ export const JOBS = [
     description: '',
     url: 'https://kasfactory.net',
     logo: 'kf.png',
+    start: new Date(2018, 6),
+    end: new Date(2019, 5),
+    current: false,
     technologies: [
       {
         id: 1,

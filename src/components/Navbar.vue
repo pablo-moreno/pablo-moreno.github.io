@@ -2,9 +2,7 @@
   <nav class="navbar">
     <div class="navbar-end">
       <a href="#skills">Skills</a>
-      <a href="#skills">Skills</a>
-      <a href="#skills">Skills</a>
-      <a href="#skills">Skills</a>
+      <a href="#experience">Job Experience</a>
     </div>
   </nav>
 </template>

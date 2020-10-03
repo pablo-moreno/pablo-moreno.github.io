@@ -1,12 +1,27 @@
 <template>
   <article class="job-card" :class="{'reverse': reverse}">
-    <img :src="getImg(job.logo)" class="job-card-logo" :alt="job.title">
+    <a :href="job.url">
+      <img :src="getImg(job.logo)" class="job-card-logo" :alt="job.title">
+    </a>
 
     <div class="job-card-body">
       <header>
         <h3 :class="{'reverse': reverse}">
           {{ job.title }}
         </h3>
+        <h5 :class="{'reverse': reverse}">
+          <span>
+            {{ job.start | formatdate({ month: 'long', year: 'numeric' }) }} 
+          </span>
+          -
+          <span v-if="job.end">
+            {{ job.end | formatdate({ month: 'long', year: 'numeric' }) }} 
+          </span>
+          <span v-else>
+            now
+          </span>
+
+        </h5>
       </header>
       <div>
         <p class="job-description">
@@ -36,7 +51,7 @@ export default {
   },
   computed: {
     reverse() {
-      return this.index % 2 === 1
+      return false // this.index % 2 === 1
     }
   },
   methods: {
@@ -48,7 +63,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-h3 {
+h3, h5 {
   margin: 0;
   text-align: left;
 }
@@ -86,6 +101,7 @@ h3 {
   list-style: none;
   padding: 0;
   margin: 0;
+  flex-wrap: wrap;
   
   li {
     padding-right: 1em;
